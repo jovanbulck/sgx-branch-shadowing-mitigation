@@ -30,8 +30,10 @@ make
 ## 3. Install and run the obfuscating compiler
 
 ```
+git submodule init
+git submodule update
 cd llvm
-git clone https://github.com/llvm-mirror/clang.git tools/clang
+ln -s ../clang tools/clang
 mkdir build
 cd build
 cmake ..
